@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #coupon_form, #bill {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="" onsubmit="handleSubmit()">
+        <select name="food" id="food">
+            <option value="0">--Select Food--</option>
+            <option value="100">Burger</option>
+            <option value="300">Pizza</option>
+            <option value="500">Combo</option>
+        </select>
+        <select name="food_qty" id="food_qty">
+            <option value="0">--Select Food Quantity--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <br><br>
+
+        <select name="fries" id="fries">
+            <option value="0">--Select fries--</option>
+            <option value="150">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <select name="fries_qty" id="fries_qty">
+            <option value="0">--Select fries Quantity--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <br><br>
+
+        <select name="cold_drinks" id="cold_drinks">
+            <option value="0">--Select cold_drinks--</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <select name="cd_qty" id="cd_qty">
+            <option value="0">--Select cold drinks Quantity--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <select name="cd_type" id="cd_type">
+            <option value="0">--Select Cold Drinks Type</option>
+            <option value="20">Pepsi</option>
+            <option value="25">Mazza</option>
+            <option value="30">Thums Up</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit">
+    </form>
+
+    <div id="disp">
+        
+    </div>
+
+    <br><br>
+
+    <form action="" id="coupon_form" onsubmit="handleCoupon()">
+        <input type="text" name="coupon" id="coupon" placeholder="Enter Coupon">
+        <br><br>
+
+        <input type="submit">
+    </form>
+
+    <br><br>
+
+    <div id="bill">
+
+    </div>
+    
+
+    <script src="js/restaurant.js"></script>
+</body>
+</html>
